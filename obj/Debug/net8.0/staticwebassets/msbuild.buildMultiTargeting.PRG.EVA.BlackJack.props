@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PRG.EVA.BlackJack.props" />
+</Project>

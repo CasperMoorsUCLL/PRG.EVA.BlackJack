@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Verloren";
+}
+
+<h1>Helaas!</h1>
+<p>Je hebt verloren.</p>
+<p>Jouw totale waarde: @Model.PlayerDeck.TotalValue</p>
+<p>Dealer's totale waarde: @Model.DealerDeck.TotalValue</p>
+
+<!-- Link om een nieuw spel te starten -->
+<a href="@Url.Action("InitGame", "BlackJack", new { bet = 50 })" class="btn btn-primary">Start Nieuw Spel</a>

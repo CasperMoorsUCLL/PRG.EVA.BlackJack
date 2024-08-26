@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Blackjack Game";
+}
+
+<h1>Welcome to Blackjack!</h1>
+<p>Your game has started with a bet of @Model.Bet.</p>
+<p>Dealer's total value: @Model.DealerDeck.TotalValue</p>
+<p>Your total value: @Model.PlayerDeck.TotalValue</p>
+
+<a href="@Url.Action("Play", "BlackJack")" class="btn btn-primary">Play</a>

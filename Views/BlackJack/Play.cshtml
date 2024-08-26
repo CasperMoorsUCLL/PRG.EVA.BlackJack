@@ -1,0 +1,78 @@
+﻿@model PRG.EVA.BlackJack.Models.BlackJackGame
+@*
+@{
+    ViewData["Title"] = "Blackjack Spel";
+}
+
+<h1>Blackjack Spel</h1>
+
+<p>Jouw totale waarde: @Model.PlayerDeck.TotalValue</p>
+<p>Dealer's totale waarde: @Model.DealerDeck.TotalValue</p>
+
+@if (Model.PlayerDeck.TotalValue < 21)
+{
+    <p>Je kunt nog verder spelen!</p>
+    <a href="@Url.Action("Play", "BlackJack", new { option = "H" })" class="btn btn-primary">Nieuwe Kaart (Hit)</a>
+    <a href="@Url.Action("Play", "BlackJack", new { option = "S" })" class="btn btn-secondary">Stoppen (Stand)</a>
+}
+
+else
+{
+    <p>Je hebt 21 gehaald en dus gewonnen.</p>
+}
+
+<!-- Link om een nieuw spel te starten -->
+<a href="@Url.Action("InitGame", "BlackJack", new { bet = 50 })" class="btn btn-primary">Start Nieuw Spel</a>
+
+ *@
+
+
+@{
+    ViewData["Title"] = "Blackjack Spel";
+}
+
+<h1>Blackjack Spel</h1>
+@* <p>Jouw totale waarde: @ViewBag.TotalPlayer</p> *@
+@* <p>Dealer's totale waarde: @ViewBag.TotalDealer</p> *@
+
+<!-- Display the result message based on ViewBag.Result -->
+@if (ViewBag.Result != null)
+{
+    <h3>@ViewBag.Result</h3>
+}
+
+@if (ViewBag.Result == "GameError")
+{
+    <p>Het spel is niet geïnitialiseerd. Klik <a href="@Url.Action("InitGame", "BlackJack", new { bet = 50 })">hier</a> om een nieuw spel te starten.</p>
+}
+@* else if (ViewBag.Result == "UnknownOption")
+{
+    <p>Ongeldige optie geselecteerd. Kies 'Hit' om een nieuwe kaart te krijgen of 'Stand' om te stoppen.</p>
+} *@
+else if (ViewBag.Result == "Won" || ViewBag.Result == "Lost" || ViewBag.Result == "Draw")
+{
+    <p>Je hebt @ViewBag.Result!</p>
+    <p>Jouw totale waarde: @ViewBag.TotalPlayer</p>
+    <p>Dealer's totale waarde: @ViewBag.TotalDealer</p>
+    <p>Je hebt @ViewBag.Wins gewonnen.</p>
+}
+else
+{
+    <!-- If the game is still ongoing, only show the player's total value -->
+    <p>Jouw totale waarde: @ViewBag.TotalPlayer</p>
+    <p>Dealer's totale waarde: @ViewBag.TotalDealer</p>
+    <!-- Provide options to continue playing or stop -->
+    if (ViewBag.TotalPlayer < 21)
+    {
+        <p>Je kunt nog verder spelen!</p>
+        <a href="@Url.Action("Play", "BlackJack", new { option = "H" })" class="btn btn-primary">Nieuwe Kaart (Hit)</a>
+        <a href="@Url.Action("Play", "BlackJack", new { option = "S" })" class="btn btn-secondary">Stoppen (Stand)</a>
+    }
+    else
+    {
+        <p>Je hebt 21 gehaald en dus gewonnen.</p>
+    }
+}
+
+<!-- Link om een nieuw spel te starten -->
+<a href="@Url.Action("InitGame", "BlackJack", new { bet = 50 })" class="btn btn-primary">Start Nieuw Spel</a>
