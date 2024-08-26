@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\blackjack\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\blackjack\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\BlackJack\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\BlackJack\\_Layout.cshtml*",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowB4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T17:21:09.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAowDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T15:52:52.684Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -22,6 +61,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlackJackController.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\BlackJackController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BlackJackController.cs",
+              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\BlackJackController.cs",
+              "RelativeToolTip": "Controllers\\BlackJackController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T15:43:42.503Z",
+              "EditorCaption": ""
             }
           ]
         }
