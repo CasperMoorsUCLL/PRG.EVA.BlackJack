@@ -4112,11 +4112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Casper\\Desktop\\PRG.EVA.BlackJack\\PRG.EVA.BlackJack.csproj",
+      "projectUniqueName": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\PRG.EVA.BlackJack.csproj",
       "projectName": "PRG.EVA.BlackJack",
-      "projectPath": "C:\\Users\\Casper\\Desktop\\PRG.EVA.BlackJack\\PRG.EVA.BlackJack.csproj",
+      "projectPath": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\PRG.EVA.BlackJack.csproj",
       "packagesPath": "C:\\Users\\Casper\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Casper\\Desktop\\PRG.EVA.BlackJack\\obj\\",
+      "outputPath": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Casper\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BqvFW8f7OHvhJ7yMNuSPdTd5WWkA6ql68VhiLmicoXyR2MJlb2j1VIFcRoZ+E0AZ608DNxliobsX7bj09lrN8g==",
+  "dgSpecHash": "ci073BO6tOJFozPUnyLQCIiVAq9ksJDC005yBtI/SMzzTYgWrkvcuZiu3TEYWnU/vlMudxdrtKBQ0iS9aDHslQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Casper\\Desktop\\PRG.EVA.BlackJack\\PRG.EVA.BlackJack.csproj",
+  "projectFilePath": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\PRG.EVA.BlackJack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Casper\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Casper\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
