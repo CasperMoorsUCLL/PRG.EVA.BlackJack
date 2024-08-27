@@ -85,7 +85,7 @@ namespace PRG.EVA.BlackJack.Controllers
                 _game.PlayerDeck.AddCard(newCard);
 
                 ViewBag.TotalPlayer = _game.PlayerDeck.TotalValue;
-
+                
                 if (_game.PlayerDeck.TotalValue > 21)
                 {
                     _game.Status = GameStatus.Lost;
@@ -94,8 +94,25 @@ namespace PRG.EVA.BlackJack.Controllers
                     ViewBag.TotalDealer = _game.DealerDeck.TotalValue;
 
                     // Bewaar het resultaat van het spel in de database
-                    await SaveGameLog(0, "Hit", newCard.Suit.ToString(), newCard.Rank.ToString(), _game.PlayerDeck.TotalValue, 0, ViewBag.Result);
-
+                    //await SaveGameLog(0, "Hit", newCard.Suit.ToString(), newCard.Rank.ToString(), _game.PlayerDeck.TotalValue, 0, ViewBag.Result);
+                    if (_game.Status == GameStatus.Won)
+                    {
+                        ViewBag.Result = "Gewonnen";
+                        ViewBag.Wins = _game.Bet * 2;
+                        await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, ViewBag.Result);
+                    }
+                    else if (_game.Status == GameStatus.Lost)
+                    {
+                        ViewBag.Result = "Verloren";
+                        ViewBag.Wins = 0;
+                        await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, ViewBag.Result);
+                    }
+                    else
+                    {
+                        ViewBag.Result = "Gelijkgespeeld";
+                        ViewBag.Wins = _game.Bet;
+                        await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, ViewBag.Result);
+                    }
                     return View("Play", _game);
                 }
                 return View("Play", _game);
@@ -130,7 +147,7 @@ namespace PRG.EVA.BlackJack.Controllers
                 {
                     ViewBag.Result = "Gelijkgespeeld";
                     ViewBag.Wins = _game.Bet;
-                    //await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, "Draw");
+                    await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, ViewBag.Result);
                 }
 
                 return View("Play", _game);

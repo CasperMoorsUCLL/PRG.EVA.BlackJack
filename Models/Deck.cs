@@ -39,7 +39,7 @@ namespace PRG.EVA.BlackJack.Models
         {
             return rank switch
             {
-                Rank.Ace => 11,       // Aas kan 11 of 1 zijn, afhankelijk van de context
+                Rank.Ace => 11,
                 Rank.Two => 2,
                 Rank.Three => 3,
                 Rank.Four => 4,

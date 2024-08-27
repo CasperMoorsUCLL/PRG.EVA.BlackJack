@@ -15,7 +15,7 @@
             Rank = rank;
         }
 
-        // Optioneel: Override ToString() voor een gebruiksvriendelijke representatie van de kaart
+        // Override ToString() voor een gebruiksvriendelijke representatie van de kaart
         public override string ToString()
         {
             return $"{Rank} of {Suit}";
