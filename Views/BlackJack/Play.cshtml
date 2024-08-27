@@ -1,31 +1,4 @@
 ﻿@model PRG.EVA.BlackJack.Models.BlackJackGame
-@*
-@{
-    ViewData["Title"] = "Blackjack Spel";
-}
-
-<h1>Blackjack Spel</h1>
-
-<p>Jouw totale waarde: @Model.PlayerDeck.TotalValue</p>
-<p>Dealer's totale waarde: @Model.DealerDeck.TotalValue</p>
-
-@if (Model.PlayerDeck.TotalValue < 21)
-{
-    <p>Je kunt nog verder spelen!</p>
-    <a href="@Url.Action("Play", "BlackJack", new { option = "H" })" class="btn btn-primary">Nieuwe Kaart (Hit)</a>
-    <a href="@Url.Action("Play", "BlackJack", new { option = "S" })" class="btn btn-secondary">Stoppen (Stand)</a>
-}
-
-else
-{
-    <p>Je hebt 21 gehaald en dus gewonnen.</p>
-}
-
-<!-- Link om een nieuw spel te starten -->
-<a href="@Url.Action("InitGame", "BlackJack", new { bet = 50 })" class="btn btn-primary">Start Nieuw Spel</a>
-
- *@
-
 
 @{
     ViewData["Title"] = "Blackjack Spel";
@@ -49,7 +22,7 @@ else
 {
     <p>Ongeldige optie geselecteerd. Kies 'Hit' om een nieuwe kaart te krijgen of 'Stand' om te stoppen.</p>
 } *@
-else if (ViewBag.Result == "Won" || ViewBag.Result == "Lost" || ViewBag.Result == "Draw")
+else if (ViewBag.Result == "gewonnen" || ViewBag.Result == "Lost" || ViewBag.Result == "Draw")
 {
     <p>Je hebt @ViewBag.Result!</p>
     <p>Jouw totale waarde: @ViewBag.TotalPlayer</p>

@@ -4,17 +4,44 @@ using PRG.EVA.BlackJack.Models;
 namespace PRG.EVA.BlackJack.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using System.Diagnostics.Metrics;
     using System.Text.Json;
+    using static System.Runtime.InteropServices.JavaScript.JSType;
 
     public class BlackJackController : Controller
     {
         private static BlackJackGame? _game;
+        private readonly ApplicationDbContext _context;
         private readonly HttpClient _httpClient;
 
-        public BlackJackController(HttpClient httpClient)
+        public BlackJackController(HttpClient httpClient, ApplicationDbContext context)
         {
             _httpClient = httpClient;
+            _context = context;
         }
+
+        public async Task<IActionResult> SaveGameLog(int Id, string playOption, string CardSuit, string CardRank, decimal CardTotal, decimal wins, string result)
+        {
+            // Verzamel de benodigde gegevens
+            var gameLog = new GameLog
+            {
+                Id = Id,
+                PlayOption = playOption,
+                CardSuit = CardSuit,
+                CardRank = CardRank,
+                CardTotal = CardTotal,
+                Wins = wins,
+                Result = result
+            };
+
+            // Voeg de GameLog toe aan de database
+            _context.GameLogs.Add(gameLog);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
+
 
         // InitGame action
         public async Task<IActionResult> InitGame(decimal bet)
@@ -67,7 +94,7 @@ namespace PRG.EVA.BlackJack.Controllers
                     ViewBag.TotalDealer = _game.DealerDeck.TotalValue;
                     return View("Play", _game);
                 }
-
+               
                 return View("Play", _game);
             }
             else if (option == "S" || _game.PlayerDeck.TotalValue >= 21)

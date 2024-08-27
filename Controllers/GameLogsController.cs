@@ -18,7 +18,8 @@ namespace PRG.EVA.BlackJack.Controllers
         // GET: GameLogs
         public async Task<IActionResult> Index()
         {
-            return View(await _context.GameLogs.ToListAsync());
+            var logs = await _context.GameLogs.ToListAsync();
+            return View(logs);
         }
 
         // GET: GameLogs/Details/5

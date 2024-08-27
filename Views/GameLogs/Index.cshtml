@@ -1,0 +1,79 @@
+﻿@model IEnumerable<PRG.EVA.BlackJack.Models.GameLog>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayOption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardSuit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardRank)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Wins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Result)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedOn)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PlayOption)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CardSuit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CardRank)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CardTotal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Wins)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Result)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedOn)
+                </td>
+                <td>
+
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

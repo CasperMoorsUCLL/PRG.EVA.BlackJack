@@ -2,30 +2,6 @@
 using System.Linq;
 namespace PRG.EVA.BlackJack.Models
 {
-    //public class Deck
-    //{
-    //    // Eigenschap om de totale waarde van alle kaarten bij te houden
-    //    public int TotalValue { get; set; }
-
-    //    // Constructor om een nieuwe Deck aan te maken met een totale waarde van 0
-    //    public Deck()
-    //    {
-    //        TotalValue = 0;
-    //    }
-
-    //    // Methode om een kaart toe te voegen aan de Deck
-    //    // Voor nu voegen we alleen de waarde van de kaart toe aan de TotalValue
-    //    public void AddCard(int cardValue)
-    //    {
-    //        TotalValue += cardValue;
-    //    }
-
-    //    // Methode om de Deck te resetten, bijvoorbeeld wanneer een nieuw spel begint
-    //    public void ResetDeck()
-    //    {
-    //        TotalValue = 0;
-    //    }
-    //}
     public class Deck
     {
         // Eigenschap voor de collectie van Card objecten

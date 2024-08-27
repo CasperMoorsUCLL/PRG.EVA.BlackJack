@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 namespace PRG.EVA.BlackJack.Models
 {
     public class GameLog
@@ -18,5 +20,7 @@ namespace PRG.EVA.BlackJack.Models
         public string Result { get; set; }  // Resultaat van de poging (Won, Lost, Draw, etc.)
 
         public DateTime CreatedOn { get; set; } = DateTime.Now;  // Tijdstip van de log creatie
-    }
+
+       }
+
 }

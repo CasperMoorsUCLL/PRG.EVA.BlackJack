@@ -90,5 +90,10 @@ app.MapControllerRoute(
     pattern: "play/{option}",
     defaults: new { controller = "BlackJack", action = "Play" });
 
+app.MapControllerRoute(
+    name: "GameLogs",
+    pattern: "/GameLogs",
+    defaults: new {controller = "GameLogs", action = "GameLogExists" });
+
 app.Run();
 
