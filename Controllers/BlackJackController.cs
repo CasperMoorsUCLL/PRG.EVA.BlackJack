@@ -89,7 +89,7 @@ namespace PRG.EVA.BlackJack.Controllers
                 if (_game.PlayerDeck.TotalValue > 21)
                 {
                     _game.Status = GameStatus.Lost;
-                    ViewBag.Result = "Lost";
+                    ViewBag.Result = "Verloren";
                     ViewBag.Wins = 0;
                     ViewBag.TotalDealer = _game.DealerDeck.TotalValue;
 
@@ -116,19 +116,19 @@ namespace PRG.EVA.BlackJack.Controllers
 
                 if (_game.Status == GameStatus.Won)
                 {
-                    ViewBag.Result = "Won";
+                    ViewBag.Result = "Gewonnen";
                     ViewBag.Wins = _game.Bet * 2;
                     await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, ViewBag.Result);
                 }
                 else if (_game.Status == GameStatus.Lost)
                 {
-                    ViewBag.Result = "Lost";
+                    ViewBag.Result = "Verloren";
                     ViewBag.Wins = 0;
                     await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, ViewBag.Result);
                 }
                 else
                 {
-                    ViewBag.Result = "Draw";
+                    ViewBag.Result = "Gelijkgespeeld";
                     ViewBag.Wins = _game.Bet;
                     //await SaveGameLog(0, option, "", "", _game.PlayerDeck.TotalValue, ViewBag.Wins, "Draw");
                 }
