@@ -64,10 +64,15 @@ namespace PRG.EVA.BlackJack.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var gameLog = await _context.GameLogs.FindAsync(id);
-            _context.GameLogs.Remove(gameLog);
-            await _context.SaveChangesAsync();
+            if (gameLog != null)
+            {
+                _context.GameLogs.Remove(gameLog);
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction(nameof(Index));
         }
+
 
         private bool GameLogExists(int id)
         {

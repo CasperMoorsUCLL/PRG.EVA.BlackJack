@@ -1,14 +1,8 @@
 ﻿@model IEnumerable<PRG.EVA.BlackJack.Models.GameLog>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Game Log";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-
 
 <table class="table">
     <thead>
@@ -70,7 +64,7 @@
                 </td>
                 <td>
 
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    @* <a asp-action="Details" asp-route-id="@item.Id">Details</a> | *@
                     <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                 </td>
             </tr>

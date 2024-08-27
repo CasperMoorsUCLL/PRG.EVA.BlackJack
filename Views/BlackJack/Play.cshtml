@@ -2,10 +2,12 @@
 
 @{
     ViewData["Title"] = "Blackjack Spel";
+    var lastPlayerCard = Model.PlayerDeck.Cards.LastOrDefault();
+    var lastDealerCard = Model.DealerDeck.Cards.LastOrDefault();
 }
 
 <h1>Blackjack Spel</h1>
-@* <p>Jouw totale waarde: @ViewBag.TotalPlayer</p> *@
+@*  <p>Jouw totale waarde: @ViewBag.TotalPlayer</p> *@
 @* <p>Dealer's totale waarde: @ViewBag.TotalDealer</p> *@
 
 <!-- Display the result message based on ViewBag.Result -->
@@ -21,19 +23,59 @@
 @* else if (ViewBag.Result == "UnknownOption")
 {
     <p>Ongeldige optie geselecteerd. Kies 'Hit' om een nieuwe kaart te krijgen of 'Stand' om te stoppen.</p>
-} *@
+}*@
 else if (ViewBag.Result == "Gewonnen" || ViewBag.Result == "Verloren" || ViewBag.Result == "Gelijkgespeeld")
 {
     <p>Je hebt @ViewBag.Result!</p>
-    <p>Jouw totale waarde: @ViewBag.TotalPlayer</p>
-    <p>Dealer's totale waarde: @ViewBag.TotalDealer</p>
+    <h3>Jouw Hand</h3>
+    @if (lastPlayerCard != null)
+    {
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">@lastPlayerCard.Rank</h5>
+                <p class="card-text">@lastPlayerCard.Suit</p>
+            </div>
+        </div>
+    }
+    <p>Totaal: @Model.PlayerDeck.TotalValue</p>
+    <h3>Dealer's Hand</h3>
+    @if (lastDealerCard != null)
+    {
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">@lastDealerCard.Rank</h5>
+                <p class="card-text">@lastDealerCard.Suit</p>
+            </div>
+        </div>
+    }
+    <p>Totaal: @Model.DealerDeck.TotalValue</p>
     <p>Je hebt @ViewBag.Wins gewonnen.</p>
 }
 else
 {
     <!-- If the game is still ongoing, only show the player's total value -->
-    <p>Jouw totale waarde: @ViewBag.TotalPlayer</p>
-    <p>Dealer's totale waarde: @ViewBag.TotalDealer</p>
+    <h3>Jouw Hand</h3>
+        @if (lastPlayerCard != null)
+        {
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@lastPlayerCard.Rank</h5>
+                    <p class="card-text">@lastPlayerCard.Suit</p>
+                </div>
+            </div>
+        }
+    <p>Totaal: @Model.PlayerDeck.TotalValue</p>
+    <h3>Dealer's Hand</h3>
+        @if (lastDealerCard != null)
+        {
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">@lastDealerCard.Rank</h5>
+                    <p class="card-text">@lastDealerCard.Suit</p>
+                </div>
+            </div>
+        }
+    <p>Totaal: @Model.DealerDeck.TotalValue</p>
     <!-- Provide options to continue playing or stop -->
     if (ViewBag.TotalPlayer < 21)
     {

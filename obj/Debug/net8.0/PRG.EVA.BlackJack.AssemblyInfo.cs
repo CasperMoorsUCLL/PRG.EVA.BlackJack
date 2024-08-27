@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRG.EVA.BlackJack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+352c84cb9c92af9e243b37a278eb69c4a055521a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38f6284761001cd635b9b2533278e5f382c2f642")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRG.EVA.BlackJack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRG.EVA.BlackJack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

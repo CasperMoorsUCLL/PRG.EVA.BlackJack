@@ -1,8 +1,10 @@
 ﻿@{
-    ViewData["Title"] = "BlackJack";
+    ViewData["Title"] = "Home";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome to Blackjack</h1>
+    <p>Ready to play a game of Blackjack? Click the button below to start!</p>
+
+    <a href="@Url.Action("InitGame", "BlackJack", new { bet = 50 })" class="btn btn-primary">Start a New Blackjack Game</a>
 </div>
