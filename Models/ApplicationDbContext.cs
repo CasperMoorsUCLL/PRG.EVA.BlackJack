@@ -7,6 +7,8 @@ namespace PRG.EVA.BlackJack.Models
     {
         // Eigenschap om de lijst van GameLog objecten te beheren
         public DbSet<GameLog> GameLogs { get; set; }
+        public DbSet<Card> Card { get; set; }
+        // public DbSet<Deck> Deck { get; set; }
 
         // Constructor met DbContextOptions parameter
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

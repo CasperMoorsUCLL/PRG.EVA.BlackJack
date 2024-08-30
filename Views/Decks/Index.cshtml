@@ -1,0 +1,33 @@
+﻿@* @model IEnumerable<PRG.EVA.BlackJack.Models.Deck>
+@{
+    ViewData["Title"] = "Deck";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DeckId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cards)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DeckId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cards)
+                </td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.DeckId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>  *@

@@ -1,0 +1,42 @@
+﻿@model PRG.EVA.BlackJack.Models.Card
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Weet je zeker dat je dit record wilt verwijderen?</h3>
+<div>
+    <h4>Cards</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CardId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CardId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Suit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Suit)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rank)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rank)
+        </dd>
+
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="CardId" />
+        <button type="submit" class="btn btn-danger">Verwijder</button> |
+        <a asp-action="Index" class="btn btn-secondary">Annuleer</a>
+    </form>
+</div>
+
+

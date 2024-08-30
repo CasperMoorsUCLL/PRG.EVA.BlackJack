@@ -1,0 +1,42 @@
+﻿@model IEnumerable<PRG.EVA.BlackJack.Models.Card>
+
+@{
+    ViewData["Title"] = "Card";
+}
+
+ <table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CardId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rank)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CardId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Suit)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rank)
+                </td>
+                <td>
+
+                    <a asp-action="Delete" asp-route-id="@item.CardId">Delete</a> 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

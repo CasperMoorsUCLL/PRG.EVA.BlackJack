@@ -1,20 +1,25 @@
-﻿namespace PRG.EVA.BlackJack.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace PRG.EVA.BlackJack.Models
 {
     public class BlackJackGame
     {
         // Eigenschappen van het spel
+       [Key]
+        public int GameId { get; set; }
         public Deck DealerDeck { get; private set; }
         public Deck PlayerDeck { get; private set; }
         public GameStatus Status { get; set; }
         public decimal Bet { get; private set; }
 
         // Constructor om een nieuw spel te initialiseren
-        public BlackJackGame(decimal initialBet)
+        public BlackJackGame(decimal bet)
         {
             DealerDeck = new Deck();
             PlayerDeck = new Deck();
             Status = GameStatus.Playing;
-            Bet = initialBet;
+            Bet = bet;
         }
 
         // Methode om een nieuwe inzet te plaatsen
@@ -22,7 +27,6 @@
         {
             Bet = newBet;
         }
-
         // Methode om het spel te updaten op basis van de huidige situatie
         public void UpdateGameStatus()
         {
@@ -47,7 +51,6 @@
                 Status = GameStatus.Lost;
             }
         }
-
         // Methode om een kaart toe te voegen aan de hand van de speler
         public void PlayerHit(int cardValue)
         {
@@ -57,7 +60,6 @@
                 UpdateGameStatus();
             }
         }
-
         // Methode om een kaart toe te voegen aan de hand van de dealer
         public void DealerHit(int cardValue)
         {
@@ -67,7 +69,6 @@
                 UpdateGameStatus();
             }
         }
-
         // Methode om het spel te resetten
         public void ResetGame(decimal newBet)
         {

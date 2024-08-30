@@ -1,9 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 namespace PRG.EVA.BlackJack.Models
 {
     public class Deck
     {
+        [Key]
+        public int DeckId { get; set; } // Primary Key
+        public BlackJackGame GameId { get; set; }
         // Eigenschap voor de collectie van Card objecten
         public List<Card> Cards { get; private set; }
 
@@ -12,7 +16,27 @@ namespace PRG.EVA.BlackJack.Models
         {
             get
             {
-                return Cards.Sum(card => GetCardValue(card.Rank));
+                int totalValue = 0;
+                int aceCount = 0;
+
+                foreach (var card in Cards)
+                {
+                    int cardValue = GetCardValue(card.Rank);
+                    totalValue += cardValue;
+                    if (card.Rank == Rank.Ace)
+                    {
+                        aceCount++;
+                    }
+                }
+
+                // Adjust for Aces
+                while (totalValue > 21 && aceCount > 0)
+                {
+                    totalValue -= 10;
+                    aceCount--;
+                }
+
+                return totalValue;
             }
         }
 
@@ -22,19 +46,16 @@ namespace PRG.EVA.BlackJack.Models
             Cards = new List<Card>();
         }
 
-        // Methode om een kaart toe te voegen aan het Deck
         public void AddCard(Card card)
         {
             Cards.Add(card);
         }
 
-        // Methode om het Deck te resetten, bijvoorbeeld wanneer een nieuw spel begint
         public void ResetDeck()
         {
             Cards.Clear();
         }
 
-        // Hulpmethode om de waarde van een kaart op basis van de Rank te bepalen
         private int GetCardValue(Rank rank)
         {
             return rank switch

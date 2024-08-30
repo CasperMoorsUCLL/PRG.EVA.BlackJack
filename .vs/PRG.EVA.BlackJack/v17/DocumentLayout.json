@@ -3,40 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\blackjack\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\blackjack\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\gamelogs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\gamelogs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\blackjack\\initgame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\blackjack\\initgame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:controllers\\blackjackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\blackjack\\play.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\blackjack\\play.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\views\\gamelogs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:views\\gamelogs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|c:\\users\\casper\\desktop\\programmeren_gevorderd\\prg.eva.blackjack\\controllers\\gamelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2C38E45-69D6-4B92-BF5F-37F7C9A4A669}|PRG.EVA.BlackJack.csproj|solutionrelative:controllers\\gamelogscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,125 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T17:25:50.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\BlackJack\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\BlackJack\\_Layout.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADoAAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T17:23:11.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Play.cshtml",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\Play.cshtml",
-              "RelativeDocumentMoniker": "Views\\BlackJack\\Play.cshtml",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\Play.cshtml",
-              "RelativeToolTip": "Views\\BlackJack\\Play.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T16:51:02.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InitGame.cshtml",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\InitGame.cshtml",
-              "RelativeDocumentMoniker": "Views\\BlackJack\\InitGame.cshtml",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\InitGame.cshtml",
-              "RelativeToolTip": "Views\\BlackJack\\InitGame.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T16:48:19.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T16:38:20.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GameLogsController.cs",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\GameLogsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GameLogsController.cs",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\GameLogsController.cs",
-              "RelativeToolTip": "Controllers\\GameLogsController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAgwEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T16:30:43.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\GameLogs\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\GameLogs\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\GameLogs\\Delete.cshtml",
-              "RelativeToolTip": "Views\\GameLogs\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T16:32:11.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\GameLogs\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\GameLogs\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\GameLogs\\Index.cshtml",
-              "RelativeToolTip": "Views\\GameLogs\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-27T16:22:40.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T16:14:32.116Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -176,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Play.cshtml",
+              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\Play.cshtml",
+              "RelativeDocumentMoniker": "Views\\BlackJack\\Play.cshtml",
+              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Views\\BlackJack\\Play.cshtml",
+              "RelativeToolTip": "Views\\BlackJack\\Play.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T07:44:36.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlackJackController.cs",
+              "DocumentMoniker": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\BlackJackController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BlackJackController.cs",
+              "ToolTip": "C:\\Users\\Casper\\Desktop\\Programmeren_Gevorderd\\PRG.EVA.BlackJack\\Controllers\\BlackJackController.cs*",
+              "RelativeToolTip": "Controllers\\BlackJackController.cs*",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAgwGUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T07:34:14.458Z",
+              "EditorCaption": ""
             }
           ]
         }

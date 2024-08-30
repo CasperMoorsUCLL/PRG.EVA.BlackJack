@@ -1,7 +1,11 @@
-﻿namespace PRG.EVA.BlackJack.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PRG.EVA.BlackJack.Models
 {
     public class Card
     {
+        [Key]
+        public int CardId { get; set; } // Primary Key
         // Eigenschap voor het soort kaart
         public Suit Suit { get; set; }
 

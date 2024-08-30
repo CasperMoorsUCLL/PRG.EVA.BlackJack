@@ -1,14 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PRG.EVA.BlackJack.Models;
-
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.Metrics;
+using System.Text.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace PRG.EVA.BlackJack.Controllers
 {
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore;
-    using System.Diagnostics.Metrics;
-    using System.Text.Json;
-    using static System.Runtime.InteropServices.JavaScript.JSType;
-
     public class BlackJackController : Controller
     {
         private static BlackJackGame? _game;
@@ -20,28 +17,6 @@ namespace PRG.EVA.BlackJack.Controllers
             _httpClient = httpClient;
             _context = context;
         }
-
-        public async Task<IActionResult> SaveGameLog(int Id, string playOption, string CardSuit, string CardRank, decimal CardTotal, decimal wins, string result)
-        {
-            // Verzamel de benodigde gegevens
-            var gameLog = new GameLog
-            {
-                Id = Id,
-                PlayOption = playOption,
-                CardSuit = CardSuit,
-                CardRank = CardRank,
-                CardTotal = CardTotal,
-                Wins = wins,
-                Result = result
-            };
-
-            // Voeg de GameLog toe aan de database
-            _context.GameLogs.Add(gameLog);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("Index");
-        }
-
 
         // InitGame action
         public async Task<IActionResult> InitGame(decimal bet)
@@ -85,7 +60,7 @@ namespace PRG.EVA.BlackJack.Controllers
                 _game.PlayerDeck.AddCard(newCard);
 
                 ViewBag.TotalPlayer = _game.PlayerDeck.TotalValue;
-                
+
                 if (_game.PlayerDeck.TotalValue > 21)
                 {
                     _game.Status = GameStatus.Lost;
@@ -120,11 +95,11 @@ namespace PRG.EVA.BlackJack.Controllers
             else if (option == "S" || _game.PlayerDeck.TotalValue >= 21)
             {
                 // Speler kiest voor Stand
-                while (_game.DealerDeck.TotalValue < 17)
-                {
-                    var dealerCard = await GetCardFromApiAsync();
-                    _game.DealerDeck.AddCard(dealerCard);
-                }
+                //while (_game.DealerDeck.TotalValue < 17)
+                //{
+                //    var dealerCard = await GetCardFromApiAsync();
+                //    _game.DealerDeck.AddCard(dealerCard);
+                //}
 
                 ViewBag.TotalPlayer = _game.PlayerDeck.TotalValue;
                 ViewBag.TotalDealer = _game.DealerDeck.TotalValue;
@@ -171,6 +146,26 @@ namespace PRG.EVA.BlackJack.Controllers
             var card = await response.Content.ReadFromJsonAsync<Card>();
             return card ?? throw new Exception("Failed to retrieve card from API");
         }
-    }
+        public async Task<IActionResult> SaveGameLog(int Id, string playOption, string CardSuit, string CardRank, decimal CardTotal, decimal wins, string result)
+        {
+            // Verzamel de benodigde gegevens
+            var gameLog = new GameLog
+            {
+                Id = Id,
+                PlayOption = playOption,
+                CardSuit = CardSuit,
+                CardRank = CardRank,
+                CardTotal = CardTotal,
+                Wins = wins,
+                Result = result
+            };
 
+            // Voeg de GameLog toe aan de database
+            _context.GameLogs.Add(gameLog);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
+
+    }
 }

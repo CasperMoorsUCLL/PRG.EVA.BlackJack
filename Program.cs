@@ -95,5 +95,15 @@ app.MapControllerRoute(
     pattern: "/GameLogs",
     defaults: new {controller = "GameLogs", action = "GameLogExists" });
 
+app.MapControllerRoute(
+    name: "Card",
+    pattern: "/Card",
+    defaults: new { controller = "Cards", action = "Index" }); 
+
+app.MapControllerRoute(
+    name: "Deck",
+    pattern: "/Deck",
+    defaults: new { controller = "Decks", action = "Index" });
+
 app.Run();
 
